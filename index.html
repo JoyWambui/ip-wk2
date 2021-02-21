@@ -34,6 +34,13 @@
       <ol>
         <!-- if i manage have a next button that reveals this area so first list item will be click begin -->
         <li>Input date of birth in the appropriate labelled form fields.</li>
+          <ul class="text-danger">
+            <p><strong>NOTE</strong></p>
+            <li>Day value should be a number between 1-31.</li>
+            <li>Month value should be a number between 1-12.</li>
+              <p>January=1, August=8, December=12...</p>
+            <li>Year value should be between 1900-2100.</li>
+          </ul>
         <li>Choose your gender.</li>
         <li>Click on submit.</li>
       </ol>
@@ -45,22 +52,12 @@
               <h4>AKAN-NAME GENERATOR</h4>
             </div>
             <div class="card-body">
-              <form name="akanform" onsubmit="return(akanName());">
+              <form name="akanform" )>
                 <h5>DOB</h5>
                 <label for="day">DAY:</label><br>
-                <input type="text" id="day" name="day"><br>
-                <label for="month">MONTH:</label><br>
-                <input type="text" id="month" name="month"><br>
-                <label for="year">YEAR:</label><br>
-                <input type="text" id="year" name="year"><br>
-                <hr>
-                <h5>GENDER</h5>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label><br>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label><br>
-                <hr>
-                <button id="button" type="button">SUBMIT</button>
+                <input type="number" id="day" name="day" min="1" max="31" placeholder="DAY" required><br>
+                <p id="daydemo"></p>
+                <button id="button" onclick="akanName();">SUBMIT</button>
               </form>
             </div>
           </div>
