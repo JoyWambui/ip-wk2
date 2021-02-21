@@ -52,14 +52,14 @@
               <h4>AKAN-NAME GENERATOR</h4>
             </div>
             <div class="card-body">
-              <form name="akanform" )>
+              <form>
                 <h5>DATE OF BIRTH</h5>
                 <label for="day">DAY:</label><br>
-                <input type="number" id="day" name="day" min="1" max="31" placeholder="DD" required><br>
+                <input type="number" id="selectDay" min="1" max="31" placeholder="DD" required><br>
                 <label for="month">MONTH:</label><br>
-                <input type="number" id="month" name="month" min="1" max="12" placeholder="MM" required><br>  
+                <input type="number" id="selectMonth" min="1" max="12" placeholder="MM" required><br>  
                 <label for="year">YEAR:</label><br>
-                <input type="number" id="year" name="year" min="1900" max="2100" placeholder="YY" required><br> 
+                <input type="number" id="selectYear" min="1900" max="2100" placeholder="YY" required><br> 
                 <hr>
                 <h5>GENDER</h5>
                 <input type="radio" id="male" name="gender" value="male">
@@ -67,7 +67,7 @@
                 <input type="radio" id="female" name="gender" value="female">
                 <label for="female">Female</label><br>
                 <hr>
-                <button id="button" onclick="akanName()">SUBMIT</button>
+                <button id="button" type="submit" onclick="akanName()" >SUBMIT</button>
               </form>
             </div>
           </div>
