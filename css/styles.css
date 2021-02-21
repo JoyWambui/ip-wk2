@@ -8,3 +8,10 @@
   font-size: 40pt;
   font-weight: bold;
 }
+.card-body{
+  text-align: center;
+  
+}
+#button {
+  text-align: left;
+}

@@ -1,64 +1,71 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="/home/bobo/Desktop/moringa-school-projects/IP/ip-wk2/js/script.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <title>AKAN-NAME GENERATOR</title>
-</head>
-<body>
-  <div class="jumbotron">
-    <h1 id="header">AKAN-NAME GENERATOR</h1> 
-  </div>
-  <div class="card">
-  <p>In Ghanian culture, it is a common occurrence for children to have Akan names.You may be wondering what an Akan name is.<!-- add em or strong -->Well, Akan names or "day-names" are names given to the Akan people's children based on the day of the week that a child was born. They often have a deeper meaning regarding the child's character and soul. Akan names are also gender specific. This means that although the inherent meaning of the name is the same, a male and female child born on the same day will have different "day-names"</p>
-  </div>
-  <div><p>Common Akan names and their associations</p>
-  <!-- insert table with day of the week, male and female akan and associations -->
-  </div>
-  <p>some prominent Ghanian personalities with Akan names are:
-    <ul>
-      <li>Kofi Anan</li>
-      <li>kwame nkrumah</li>
-      <li>the model</li>
-      <!-- ensure to search official names and titles and add to list -->
-    </ul>
-  </p>
-  <!-- prolly add a div section -->
-  <p>Would you like to find out what your Akan name is?</p>
-  <p>Follow the instructions below to find out.</p>
-  <h2>Instructions</h2>
-    <ol>
-      <!-- if i manage have a next button that reveals this area so first list item will be click begin -->
-      <li>Input date of birth in the appropriate labelled form fields.</li>
-      <li>Choose your gender.</li>
-      <li>Click on submit.</li>
-    </ol>
-    <p>It's that simple. Give it a try!</p>
-    <div class="card" id="form">
-      <div class="card-header">
-        <h3>AKAN-NAME GENERATOR</h3>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/home/bobo/Desktop/moringa-school-projects/IP/ip-wk2/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>AKAN-NAME GENERATOR</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1 id="header">AKAN-NAME GENERATOR</h1> 
       </div>
-      <div class="card-body">
-        <form>
-          <h5>DOB</h5>
-          <label for="day">DAY:</label><br>
-          <input type="text" id="day" name="day"><br>
-          <label for="month">MONTH:</label><br>
-          <input type="text" id="month" name="month"><br>
-          <label for="year">YEAR:</label><br>
-          <input type="text" id="year" name="year"><br>
-          <hr>
-          <h5>GENDER</h5>
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Male</label><br>
-          <input type="radio" id="female" name="gender" value="female">
-          <label for="female">Female</label><br>
-          <button type="button">SUBMIT</button>
-        </form>
+      <div class="card">
+        <p>In Ghanian culture, it is a common occurrence for children to have Akan names.You may be wondering what an Akan name is.<!-- add em or strong -->Well, Akan names or "day-names" are names given to the Akan people's children based on the day of the week that a child was born. They often have a deeper meaning regarding the child's character and soul. Akan names are also gender specific. This means that although the inherent meaning of the name is the same, a male and female child born on the same day will have different "day-names"</p>
+      </div>
+      <div><p>Common Akan names and their associations</p>
+      <!-- insert table with day of the week, male and female akan and associations -->
+      </div>
+      <p>some prominent Ghanian personalities with Akan names are:
+        <ul>
+          <li>Kofi Anan</li>
+          <li>kwame nkrumah</li>
+          <li>the model</li>
+          <!-- ensure to search official names and titles and add to list -->
+        </ul>
+      </p>
+      <!-- prolly add a div section -->
+      <p>Would you like to find out what your Akan name is?</p>
+      <p>Follow the instructions below to find out.</p>
+      <h2>Instructions</h2>
+      <ol>
+        <!-- if i manage have a next button that reveals this area so first list item will be click begin -->
+        <li>Input date of birth in the appropriate labelled form fields.</li>
+        <li>Choose your gender.</li>
+        <li>Click on submit.</li>
+      </ol>
+      <p>It's that simple. Give it a try!</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card" id="form">
+            <div class="card-header">
+              <h4>AKAN-NAME GENERATOR</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                <h5>DOB</h5>
+                <label for="day">DAY:</label><br>
+                <input type="text" id="day" name="day"><br>
+                <label for="month">MONTH:</label><br>
+                <input type="text" id="month" name="month"><br>
+                <label for="year">YEAR:</label><br>
+                <input type="text" id="year" name="year"><br>
+                <hr>
+                <h5>GENDER</h5>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <hr>
+                <button id="button" type="button">SUBMIT</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-</body>
+  </body>
 </html>
