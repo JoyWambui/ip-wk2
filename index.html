@@ -8,7 +8,6 @@
     <title>AKAN-NAME GENERATOR</title>
   </head>
   <body>
-  <script src="js/script.js"></script>
     <div class="container-fluid">
       <div class="jumbotron">
         <h1 id="header">AKAN-NAME GENERATOR</h1> 
@@ -93,35 +92,51 @@
         <li>Click on submit.</li>
       </ol>
       <p>It's that simple. Give it a try!</p>
-      <div class="row justify-content-center">
-        <div class="col-md-4">
-          <div class="card" id="form">
-            <div class="card-header">
-              <h4>AKAN-NAME GENERATOR</h4>
-            </div>
-            <div class="card-body">
-              <form>
-                <h5>DATE OF BIRTH</h5>
-                <label for="day">DAY:</label><br>
-                <input type="number" id="selectDay" min="1" max="31" placeholder="DD" required><br>
-                <label for="month">MONTH:</label><br>
-                <input type="number" id="selectMonth" min="1" max="12" placeholder="MM" required><br>  
-                <label for="year">YEAR:</label><br>
-                <input type="number" id="selectYear" min="1900" max="2100" placeholder="YY" required><br> 
-                <hr>
-                <h5>GENDER</h5>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label><br>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label><br>
-                <hr>
-                <button id="button" type="submit" onclick="akanName()" >SUBMIT</button>
-                <p id="demo"></p>
-              </form>
-            </div>
+      <form id="akanForm">
+        <div class="form-group row">
+          <label for="selectDay" class="col-md-2 col-form-label">DAY</label>
+          <div class="col-md-6">
+            <input type="number" class="form-control" id="selectDay" min="1" max="31" required>
           </div>
         </div>
-      </div>
+        <div class="form-group row">
+          <label for="selectMonth" class="col-md-2 col-form-label">MONTH</label>
+          <div class="col-md-6">
+            <input type="number" class="form-control" id="selectMonth" min="1" max="12" required>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="selectYear" class="col-md-2 col-form-label">YEAR</label>
+          <div class="col-md-6">
+            <input type="number" class="form-control" id="selectYear" min="1900" max="2100" required>
+          </div>  
+        </div>
+        <fieldset class="form-group row">
+          <legend class="col-form-label col-md-2 float-md-left pt-0">GENDER</legend>
+          <div class="col-md-6">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="selectMale" value="male">
+              <label class="form-check-label" for="selectMale">
+                MALE
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="selectFemale" value="female" checked>
+              <label class="form-check-label" for="selectFemale">
+                FEMALE
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        </div>
+        <div class="form-group row">
+          <div class="col-md-4">
+            <button type="submit" class="btn btn-success">SUBMIT</button>
+          </div>
+        </div>
+        <p id="getResult"></p>
+      </form>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
