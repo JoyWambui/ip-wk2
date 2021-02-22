@@ -18,3 +18,12 @@ table, th, td{
 .introduction{
   text-align: justify;
 }
+form{
+  border: 2px solid black;
+  padding: 5px;
+}
+#calculator{
+  background-color: #3C280D;
+  color: #FF6700;
+  text-align: center;
+}
