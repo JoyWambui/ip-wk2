@@ -8,10 +8,6 @@
   font-size: 40pt;
   font-weight: bold;
 }
-.card-body{
-  text-align: center;
-  
-}
 table, th, td{
   border: 2px solid burlywood;
 }
@@ -26,4 +22,20 @@ form{
   background-color: #3C280D;
   color: #FF6700;
   text-align: center;
+}
+.card{
+ text-align: left;
+}
+.card-title{
+  text-align: center;
+}
+#note{
+  font-weight: bold;
+  font-size: 15pt;
+  text-align: center;
+}
+#insertBg{
+  background-image: url(https://cdn.pixabay.com/photo/2016/08/15/13/05/woman-1595368__340.png);
+  background-color: #FF6700;
+  margin: 2.5px;
 }

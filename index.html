@@ -78,20 +78,28 @@
       </div>
       <p>Would you like to find out what your Akan name is?</p>
       <p>Follow the instructions below to find out.</p>
-      <h2>Instructions</h2>
-      <ol>
-        <li>Input date of birth in the appropriate labelled form fields.</li>
-          <ul class="text-danger">
-            <p><strong>NOTE</strong></p>
-            <li>Day value should be a number between 1-31.</li>
-            <li>Month value should be a number between 1-12.</li>
-              <p>January=1, August=8, December=12...</p>
-            <li>Year value should be between 1900-2100.</li>
-          </ul>
-        <li>Choose your gender.</li>
-        <li>Click on submit.</li>
-      </ol>
-      <p>It's that simple. Give it a try!</p>
+      <div class="row justify-content-center" id="insertBg">
+        <div class="col-md-6">
+          <div class="card">
+            <h2 class="card-title">Instructions</h2>
+            <div class="card-body">
+              <ol>
+                <li>Input date of birth in the appropriate labelled form fields.</li>
+                  <ul class="text-danger">
+                    <p><strong>NOTE</strong></p>
+                    <li>Day value should be a number between 1-31.</li>
+                    <li>Month value should be a number between 1-12.</li>
+                      <p>January=1, August=8, December=12...</p>
+                    <li>Year value should be between 1900-2100.</li>
+                  </ul>
+                <li>Choose your gender.</li>
+                <li>Click on submit.</li>
+              </ol>
+              <p id="note">It's that simple. Give it a try!</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <form id="akanForm">
         <h3 id="calculator">Akan Name-Generator</h3>
         <div class="form-group row">
