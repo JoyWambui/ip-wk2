@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", function(event){
       console.log("yearnumber", yearNumber);
     let centuryNumber = parseInt(y/100);
       console.log("centurynumber", centuryNumber);
-    let weekDay =parseInt((d + ((13*(m + 1))/5) + yearNumber + (yearNumber/4) + (centuryNumber/4) + (5*centuryNumber))%7);
+    let weekDay =parseInt((d + ((13*(m + 1))/5) + yearNumber + (yearNumber/4) + (centuryNumber/4) + (5*centuryNumber))%7)-1;
       console.log("weekday", weekDay);
     let akanMale =["Kwame","Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi"];
       console.log("maleakan", akanMale);
