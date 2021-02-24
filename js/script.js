@@ -4,18 +4,11 @@ window.addEventListener("DOMContentLoaded", function(event){
   function akanName(event){
     event.preventDefault();
     console.log("Form submitted");
-    let d = parseInt(document.querySelector("#selectDay").value);
-      console.log("day", d);
-    let m = parseInt(document.querySelector("#selectMonth").value);
-      console.log("month", m);
-    let y = parseInt(document.querySelector("#selectYear").value);
-      console.log("year", y);
-    let yearNumber = y%100;
-      console.log("yearnumber", yearNumber);
-    let centuryNumber = parseInt(y/100);
-      console.log("centurynumber", centuryNumber);
-    let weekDay =parseInt((d + ((13*(m + 1))/5) + yearNumber + (yearNumber/4) + (centuryNumber/4) + (5*centuryNumber))%7)-1;
-      console.log("weekday", weekDay);
+    let dateSelected = document.querySelector("#selectDate").value;
+    let newDate = new Date(dateSelected);
+    console.log(newDate);
+    let day = newDate.getDay();
+    console.log(day);
     let akanMale =["Kwame","Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi"];
       console.log("maleakan", akanMale);
     let akanFemale= ["Ama","Akosua","Adwoa","Abenaa","Akua","Yaa","Afua"];
