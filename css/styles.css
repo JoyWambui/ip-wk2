@@ -39,3 +39,8 @@ form{
   background-color: #FF6700;
   margin: 2.5px;
 }
+#find{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30pt;
+}
